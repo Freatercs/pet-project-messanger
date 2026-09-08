@@ -16,7 +16,7 @@ public class UserRepositoryTest {
     private UserRepository userRepository;
 
     @Test
-    public void saveAndFindOnUsername(){
+    public void saveAndFindOnUsername() {
         User user = new User("Pasha", "pasha@example.com", "asasasw");
         userRepository.save(user);
         assertNotNull(user.getId());
@@ -26,7 +26,7 @@ public class UserRepositoryTest {
     }
 
     @Test
-    public void existenceCheck(){
+    public void existenceCheck() {
         User user = new User("Sasha", "sasha@example.com", "asasasww");
         userRepository.save(user);
         assertNotNull(user.getId());
