@@ -51,6 +51,10 @@ public class JwtService {
         }
     }
 
+    public long getAccessExpirationMs() {
+        return properties.getAccessExpirationMs();
+    }
+
     public String extractUsername(String token) {
         return Jwts.parser()
                 .verifyWith(key)
